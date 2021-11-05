@@ -111,3 +111,13 @@ footer {
     }
 
   }
+
+.result-space {
+    height: 50px;
+    width: 100px;
+    background-color: pink;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+ 
+}
