@@ -40,3 +40,12 @@ addButton.addEventListener('click', () => {
 
   addResult.textContent = result;
 });
+
+subtractButton.addEventListener('click', () => {
+  const number1 = +subtractInput1.value;
+  const number2 = +subtractInput2.value;
+
+  const result = subtract(number1, number2)
+
+  subtractResult.textContent = result;
+});
