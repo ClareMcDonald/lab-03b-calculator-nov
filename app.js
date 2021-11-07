@@ -1,8 +1,8 @@
 // import functions and grab DOM elements
 import { add } from './math-utils.js';
-// import { subtract } from '.math-utils.js';
-// import { multiply } from '.math-utils.js';
-// import { divide } from '.math-utils.js';
+import { subtract } from '.math-utils.js';
+import { multiply } from '.math-utils.js';
+import { divide } from '.math-utils.js';
 
 const addInput1 = document.getElementById('add-input-1');
 const addInput2 = document.getElementById('add-input-2');
@@ -45,7 +45,25 @@ subtractButton.addEventListener('click', () => {
   const number1 = +subtractInput1.value;
   const number2 = +subtractInput2.value;
 
-  const result = subtract(number1, number2)
+  const result = subtract(number1, number2);
 
   subtractResult.textContent = result;
+});
+
+multiplyButton.addEventListener('click', () => {
+  const number1 = +multiplyInput1.value;
+  const number2 = -multiplyInput2.value;
+  const result = multiply(number1, number2);
+  
+  multiplyResult.textContent = result;
+
+});
+
+divideButton.addEventListener('click', () => {
+  const number1 = +divideInput1.value;
+  const number2 = +divideInput2.value;
+  const result = divide(number1, number2);
+
+  divideResult.textContent = result;
+
 });
